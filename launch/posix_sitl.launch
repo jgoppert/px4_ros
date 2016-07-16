@@ -7,10 +7,10 @@
     <arg name="world" default="iris"/>
     <arg name="build" default="posix_sitl_default"/>
     <arg name="data_path" default="/tmp/px4"/>
-    <arg name="rc_script" default="posix-configs/SITL/init/rcS"/>
+    <arg name="rc_script" default="/usr/share/px4/posix-configs/SITL/init/rcS"/>
     <arg name="model" default="iris"/>
 
-    <node pkg="px4" type="sitl.sh" name="simulator" output="screen" args="$(find px4)/$(arg rc_script) $(arg model) $(arg data_path)">
+    <node pkg="px4" type="sitl.sh" name="simulator" output="screen" args="$(arg rc_script) $(arg model) $(arg data_path)">
     </node>
 
     <include file="$(find gazebo_ros)/launch/empty_world.launch">

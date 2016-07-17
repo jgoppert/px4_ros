@@ -5,7 +5,6 @@
     <arg name="gui" default="true"/>
     <arg name="ns" default="/"/>
     <arg name="world" default="iris"/>
-    <arg name="build" default="posix_sitl_default"/>
     <arg name="data_path" default="/tmp/px4"/>
     <arg name="model" default="iris"/>
    	<arg name="rc_script" default="/usr/share/px4/posix-configs/SITL/init/rcS"/>

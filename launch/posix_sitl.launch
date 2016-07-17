@@ -17,7 +17,7 @@
     <include file="$(find gazebo_ros)/launch/empty_world.launch">
         <arg name="headless" value="$(arg headless)"/>
         <arg name="gui" value="$(arg gui)"/>
-        <arg name="world_name" value="/usr/share/gazebo-7/worlds/$(arg world).world" />
+        <arg name="world_name" value="worlds/$(arg world).world" />
     </include>
 </launch>
 <!-- vim: set et ts=4 sw=4 ft=xml fenc= ff=unix : -->

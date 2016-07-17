@@ -3,6 +3,7 @@
 
     <arg name="headless" default="false"/>
     <arg name="gui" default="true"/>
+    <arg name="est" default="ekf2"/>
     <arg name="ns" default="/"/>
     <arg name="world" default="iris"/>
     <arg name="build" default="posix_sitl_default"/>
@@ -14,6 +15,7 @@
         <arg name="ns" value="$(arg ns)"/>
         <arg name="world" value="$(arg world)"/>
         <arg name="build" value="$(arg build)"/>
+        <arg name="est" value="$(arg est)"/>
     </include>
 
     <include file="$(find px4)/launch/mavros.launch">

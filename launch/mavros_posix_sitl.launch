@@ -24,3 +24,4 @@
         <arg name="fcu_url" value="$(arg fcu_url)"/>
     </include>
 </launch>
+<!-- vim: set et ts=4 sw=4 ft=xml fenc= ff=unix : -->

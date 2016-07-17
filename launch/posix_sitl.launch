@@ -21,3 +21,4 @@
         <arg name="world_name" value="/usr/share/gazebo-7/worlds/$(arg world).world" />
     </include>
 </launch>
+<!-- vim: set et ts=4 sw=4 ft=xml fenc= ff=unix : -->

@@ -7,6 +7,7 @@
     <arg name="ns" default="/"/>
     <arg name="world" default="iris"/>
     <arg name="model" default="iris"/>
+    <arg name="debug" default="false"/>
     <arg name="fcu_url" default="udp://:14540@localhost:14557"/>
 
     <include file="$(find px4)/launch/posix_sitl.launch">
@@ -16,6 +17,7 @@
         <arg name="world" value="$(arg world)"/>
         <arg name="model" value="$(arg model)"/>
         <arg name="est" value="$(arg est)"/>
+        <arg name="debug" value="$(arg debug)"/>
     </include>
 
     <include file="$(find px4)/launch/mavros.launch">

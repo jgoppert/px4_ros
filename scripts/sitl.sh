@@ -58,4 +58,4 @@ fi
 
 # Do not exit on failure now from here on because we want the complete cleanup
 set +e
-cd $data_path && $sudo_enabled px4 $chroot_enabled ${rc_script}${est_string}_${program}_${model}
+cd $data_path && $sudo_enabled mainapp $chroot_enabled ${rc_script}${est_string}_${program}_${model}
